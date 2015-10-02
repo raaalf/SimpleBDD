@@ -27,6 +27,6 @@ public class ShopItemPromoSaveXxWasXx extends ShopItem{
     }
 
     private BigDecimal getPromoPrice(WebElement item) {
-        return new BigDecimal(item.findElement(By.cssSelector(".typicalPrice meta[itemprop='price']")).getAttribute("content"));
+        return new BigDecimal(item.findElement(By.cssSelector(".typicalPrice meta[itemprop='price']")).getAttribute("content").replaceAll(",", "."));
     }
 }

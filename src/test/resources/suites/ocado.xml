@@ -4,7 +4,7 @@
 
         <classes>
             <class name="com.malski.ocado.runners.LoggedOutPromoRunner" />
-            <class name="com.malski.ocado.runners.LoggedInPromoRunner" />
+            <<class name="com.malski.ocado.runners.LoggedInPromoRunner" />
             <class name="com.malski.ocado.runners.SavingsFeatureRunner" />
         </classes>
     </test>

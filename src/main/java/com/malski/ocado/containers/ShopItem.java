@@ -51,6 +51,6 @@ public class ShopItem {
     }
 
     protected BigDecimal getTypicalPrice(WebElement item) {
-        return new BigDecimal(item.findElement(By.cssSelector(".typicalPrice meta[itemprop='price']")).getAttribute("content"));
+        return new BigDecimal(item.findElement(By.cssSelector(".typicalPrice meta[itemprop='price']")).getAttribute("content").replaceAll(",", "."));
     }
 }
